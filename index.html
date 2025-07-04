@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeupkat - Tienda y Gestión</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Makeupkat</h1>
+    </header>
+
+    <button class="toggle-btn" id="toggleBtn">Ir a Gestión</button>
+
+    <div class="container">
+        <div class="login-section" id="loginSection">
+            <h2>Iniciar Sesión</h2>
+            <input type="password" id="passwordInput" placeholder="Contraseña">
+            <button id="loginBtn">Ingresar</button>
+        </div>
+
+        <div class="gestion-section" id="gestionSection">
+            <h2>Gestión de Productos</h2>
+            <div class="form-section">
+                <input type="text" id="productName" placeholder="Nombre del producto">
+                <input type="number" id="productPrice" placeholder="Precio (Q)" step="0.01">
+                <input type="file" id="productImage" accept="image/*">
+                <button id="addProductBtn">Agregar Producto</button>
+            </div>
+            <div class="product-list" id="productList"></div>
+        </div>
+
+        <div class="tienda-section active" id="tiendaSection">
+            <div class="productos" id="productGrid"></div>
+        </div>
+    </div>
+
+    <div class="carrito" id="carrito">
+        <h2>Carrito</h2>
+        <ul id="listaCarrito"></ul>
+        <p>Total: Q<span id="total">0</span></p>
+        <button class="finalizar-btn" id="finalizarPedidoBtn">Finalizar pedido</button>
+    </div>
+
+    <footer>
+        <p>© 2025 Makeupkat. Todos los derechos reservados.</p>
+        <p><a href="https://wa.me/50249080900" target="_blank">WhatsApp</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
